@@ -1,0 +1,134 @@
+/*tablets*/
+
+@media (min-width: 768px) {
+    .titulosHeader {
+        top: 40vh;
+        padding: 0 2rem;
+    }
+
+    .titulosHeader h1 {
+        font-size: 3rem;
+    }
+
+    .titulosHeader h2 {
+        font-size: 5rem;
+    }
+
+    .melhoresLinhas {
+        font-size: 2.5rem;
+    }
+
+    .car-card {
+        flex-basis: 45vw;
+    }
+
+    .search-widget {
+        margin: 10rem 2rem;
+    }
+
+    .imgContato {
+        display: block;
+        align-self: center;
+    }
+
+    .gridContato {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
+
+     .footer-column.about .contact-info {
+        justify-content: flex-start;
+    }
+}
+
+/*mobile*/
+
+@media (max-width: 767px) {
+
+   
+    .titulosHeader {
+        top: 30vh; 
+        left: 0;
+        right: 0;
+        padding: 0 1rem; 
+        text-align: center; 
+    }
+
+    .titulosHeader h1 {
+        font-size: 2.5rem; 
+    }
+
+    .titulosHeader h2 {
+        font-size: 4rem; 
+    }
+
+    .titulosHeader a {
+        padding: 1rem 3rem; 
+        font-size: 1.2rem;
+    }
+
+
+    .card {
+        width: 100%; 
+        max-width: 350px;
+    }
+
+    
+    .melhoresLinhas {
+        margin-top: 5rem; 
+        font-size: 2rem; 
+        padding: 0 1rem;
+    }
+
+    .grid-wrapper {
+        margin-left: 0; 
+    }
+
+    .card-grid {
+        margin-left: 0; 
+        scale: 1; 
+        padding: 0 1rem; 
+        overflow-x: auto; 
+        scroll-snap-type: x mandatory; 
+    }
+
+    .car-card {
+        flex: 0 0 80vw; /* Define a largura de cada card para 80% da tela */
+        scroll-snap-align: start;
+    }
+
+    /* Seção de Contato */
+    .gridContato {
+        grid-template-columns: 1fr; /* Muda o grid para uma única coluna */
+    }
+
+    .search-widget {
+        margin: 5rem 1rem; /* Ajusta todas as margens */
+        padding: 2rem;
+    }
+
+    .search-widget h1 {
+        font-size: 2rem;
+    }
+
+    .imgContato {
+        display: none; /* Oculta a imagem do carro no mobile */
+    }
+
+    /* Footer */
+    .footer-container {
+        grid-template-columns: 1fr; /* Muda o grid do rodapé para uma coluna */
+        gap: 30px;
+        text-align: center; /* Centraliza o conteúdo do rodapé */
+    }
+
+    .footer-column.about .contact-info {
+        justify-content: center; 
+    }
+}

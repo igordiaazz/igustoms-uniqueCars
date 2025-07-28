@@ -1,0 +1,89 @@
+.gridContato{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.search-widget {
+    background-color: #ffffff;
+    padding: 40px;
+    max-width: 550px;
+    border-radius: 8px; 
+    margin-left: 10rem;
+    margin-top: 15rem;
+    margin-bottom: 500px;
+}
+
+
+.search-widget h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #1c1c1c;
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+
+.search-widget p {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+
+.search-widget label {
+    display: block;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+
+.input-container {
+    position: relative;
+}
+
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%23888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>');
+    background-repeat: no-repeat;
+}
+
+.input-container button{
+    background-color: #000000;
+    padding: 10px 2rem;
+    color: white;
+    font-weight: 600;
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.input-container button:hover{
+    background-color: #1a1a1a;
+}
+
+
+.search-input {
+    width: 100%;
+    padding: 14px 20px 14px 45px; 
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.search-input::placeholder {
+    color: #888888;
+    opacity: 1;
+}

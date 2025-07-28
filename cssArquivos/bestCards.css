@@ -1,0 +1,120 @@
+.melhoresLinhas {
+    text-align: center;
+    margin-top: 250px;
+    font-size: 3rem;
+}
+
+.card-grid {
+    display: flex;
+    overflow-x: hidden;
+    user-select: none;
+    cursor: grab;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    margin-left: 50px;
+    scale: 1.5;
+    padding-right: 225px;
+}
+
+.card-grid.active {
+    cursor: grabbing;
+}
+
+.grid-wrapper {
+    margin-top: 75px;
+    margin-left: 10px;
+    overflow: hidden; 
+}
+
+.car-card {
+    flex: 0 0 400px;
+    margin-right: 10px;
+    position: relative;
+    display: block;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden; 
+    text-decoration: none;
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease; 
+}
+
+
+.car-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0) 60%);
+    z-index: 1;
+
+    
+    backdrop-filter: blur(0px); 
+    transition: backdrop-filter 0.5s ease; 
+}
+
+.card-grid:hover .car-card:not(:hover)::after {
+    backdrop-filter: blur(5px);
+}
+
+
+.card-content2 {
+    position: relative;
+    z-index: 2; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
+
+.card-tag {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.card-description {
+    margin: 0.75rem 0 0 0;
+    font-size: 1rem;
+    line-height: 1.4;
+    max-width: 90%;
+}
+
+.card-arrow {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.card-footer p {
+    text-align: start;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 2rem;
+}

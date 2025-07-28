@@ -18,10 +18,6 @@
         font-size: 2.5rem;
     }
 
-    .car-card {
-        flex-basis: 45vw;
-    }
-
     .search-widget {
         margin: 10rem 2rem;
     }
@@ -99,17 +95,17 @@
     }
 
     .car-card {
-        flex: 0 0 80vw; /* Define a largura de cada card para 80% da tela */
+        flex: 0 0 80vw; 
         scroll-snap-align: start;
     }
 
-    /* Seção de Contato */
+    
     .gridContato {
-        grid-template-columns: 1fr; /* Muda o grid para uma única coluna */
+        grid-template-columns: 1fr; 
     }
 
     .search-widget {
-        margin: 5rem 1rem; /* Ajusta todas as margens */
+        margin: 5rem 1rem; 
         padding: 2rem;
     }
 
@@ -118,14 +114,13 @@
     }
 
     .imgContato {
-        display: none; /* Oculta a imagem do carro no mobile */
+        display: none; 
     }
 
-    /* Footer */
     .footer-container {
-        grid-template-columns: 1fr; /* Muda o grid do rodapé para uma coluna */
+        grid-template-columns: 1fr; 
         gap: 30px;
-        text-align: center; /* Centraliza o conteúdo do rodapé */
+        text-align: center; 
     }
 
     .footer-column.about .contact-info {

@@ -15,8 +15,24 @@
 }
 
 
+.backgroundHomepage img{
+    max-width: 100%;
+    height: auto;
+}
+
+.backgroundHomepage{
+    background-size: cover;
+  background-position: center center; 
+  background-repeat: no-repeat; 
+}
 
 
+
+
+.card a {
+    text-decoration: none;
+    color: white;
+}
 
 
 .backgroundVideo video {
@@ -27,38 +43,60 @@
 
 .titulosHeader{
     position: absolute;
-    top: 450px;
-    left: 170px;
-}
-
-.titulosHeader h1{
-    color: rgb(255, 255, 255);
-    font-size: 4rem;
-    margin-bottom: 0px;
-    font-weight: 100;
-}
-
-.titulosHeader h2{
-    color: white;
-    font-size: 6rem;
-    margin-top: 0px;
-}
-
-.titulosHeader h1,
-.titulosHeader h2{
-    font-weight: 500;
+    top: 250px;
+    left: 635px;
 }
 
 .titulosHeader a{
     color: white;
     text-decoration: none;
-    border: 2px solid white;
+    font-weight: 900;
     padding: 2rem 10rem;
     border-radius: 6px;
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 
 .titulosHeader a:hover{
     background-color: rgba(255, 255, 255, 0.1);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

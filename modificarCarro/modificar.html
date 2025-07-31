@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizar</title>
+    <link rel="stylesheet" href="/modificarCarro/style3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<body>
+
+    <div class="headerListaCarros">
+        <img src="/midia/igustoms.png" alt="">
+    </div>
+    
+    
+    
+    <header class="main-header">
+        
+    </header>
+
+    <main class="customizer-container">
+        <section class="car-viewer">
+            <div class="car-image-gallery">
+                <img src="/midia/frenteCarro.png" class="car-view-image active" alt="">
+                <img src="/midia/cima.png" class="car-view-image active" alt="">
+                <img src="img/car-back.png" class="car-view-image active" alt="">
+                <img src="/midia/traseira.png" class="car-view-image active" alt="">
+                <img src="/midia/traseira1.png" class="car-view-image active" alt="">
+
+                <div class="image-switcher-nav">
+        <button id="prev-view-btn" class="view-switcher-btn">
+            <span class="material-symbols-outlined">arrow_back_ios</span>
+        </button>
+        <button id="next-view-btn" class="view-switcher-btn">
+            <span class="material-symbols-outlined">arrow_forward_ios</span>
+        </button>
+    </div>
+        </div>
+        </section>
+
+        <aside class="options-panel">
+            <div class="options-header">
+                <h2>Customizar Peças</h2>
+                <p>Selecione uma categoria para começar</p>
+            </div>
+
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="wheels">
+                    <span class="material-symbols-outlined">
+                        search_hands_free
+                    </span>
+                    <span>Rodas</span>
+                </button>
+                <button class="category-btn" data-category="spoilers">
+                    <span class="material-symbols-outlined icon">trending_up</span>
+                    <span>Aerofólios</span>
+                </button>
+                <button class="category-btn" data-category="paint">
+                    <span class="material-symbols-outlined icon">format_paint</span>
+                    <span>Pintura</span>
+                </button>
+            </div>
+
+            <div id="wheels-carousel" class="carousel active">
+                <div class="carousel-track">
+                    <div class="carousel-item" data-img-src="img/wheel-1.png">
+                        <span class="material-symbols-outlined">radio_button_checked</span>
+
+                        <p>Esportiva Preta</p>
+                    </div>
+                    <div class="carousel-item" data-img-src="img/wheel-2.png">
+                        <span class="material-symbols-outlined">radio_button_checked</span>
+
+                        <p>Clássica Cromada</p>
+                    </div>
+                    </div>
+                <button class="carousel-btn prev">&#10094;</button>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+
+            <div id="spoilers-carousel" class="carousel">
+                <div class="carousel-track">
+                     <div class="carousel-item" data-img-src="img/spoiler-1.png">
+                        
+                        <p>Fibra de Carbono</p>
+                    </div>
+                    </div>
+                <button class="carousel-btn prev">&#10094;</button>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+
+            <div id="paint-carousel" class="carousel">
+
+    <div class="color-options-track">
+        <div class="color-swatch color-blue" data-color="#0055ff"></div>
+        <div class="color-swatch color-red" data-color="#d92121"></div>
+        <div class="color-swatch color-green" data-color="#00a86b"></div>
+    </div>
+    </div>
+            
+
+            <div class="engine-options-track">
+                <h1>MOTORES:</h1>
+    <div class="engine-option-card" data-engine-type="standard">
+        <span class="material-symbols-outlined engine-icon">settings</span>
+        <h4 class="engine-title">Padrão</h4>
+        <p class="engine-description">Equilíbrio e eficiência</p>
+    </div>
+
+    <div class="engine-option-card" data-engine-type="turbo">
+        <span class="material-symbols-outlined engine-icon">bolt</span>
+        <h4 class="engine-title">Kit Turbo</h4>
+        <p class="engine-description">Potência e aceleração</p>
+    </div>
+    
+    <div class="engine-option-card" data-engine-type="v8">
+        <span class="material-symbols-outlined engine-icon">workspace_premium</span>
+        <h4 class="engine-title">V8 Performance</h4>
+        <p class="engine-description">Força e performance</p>
+    </div>
+
+</div>  
+
+            <div class="bodykit-options-track">
+                <h1>BODYKITS:</h1>
+    <div class="bodykit-option-card" data-bodykit-type="street">
+        <span class="material-symbols-outlined bodykit-icon">linear_scale</span>
+        <h4 class="bodykit-title">Kit Street</h4>
+        <p class="bodykit-description">Design sutil e elegante</p>
+    </div>
+
+    <div class="bodykit-option-card" data-bodykit-type="widebody">
+        <span class="material-symbols-outlined bodykit-icon">width_full</span>
+        <h4 class="bodykit-title">Widebody</h4>
+        <p class="bodykit-description">Postura larga e agressiva</p>
+    </div>
+    
+    <div class="bodykit-option-card" data-bodykit-type="gt_racing">
+        <span class="material-symbols-outlined bodykit-icon">rocket_launch</span>
+        <h4 class="bodykit-title">GT Racing</h4>
+        <p class="bodykit-description">Foco em aerodinâmica</p>
+    </div>
+
+    
+
+
+
+
+            </aside>
+
+            <div class="order-summary">
+                <h2>Resumo do Pedido</h2>
+                <ul id="summary-list">
+                    <li class="summary-placeholder">Selecione os itens para customizar.</li>
+                </ul>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="total-price">R$ 0,00</span>
+                </div>
+                <button id="order-button" class="order-button">Encomendar</button>
+            </div>
+    </main>
+
+
+    
+
+
+
+
+
+
+
+
+
+    <div class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column about"><img src="./midia/igustoms.png" alt="IGUSTOMS" class="footer-logo">
+                
+                <div class="contact-info">
+                    <div>
+                        <p class="contact-title">Telefone</p>
+                        <p>00 00000-0000</p>
+                    </div>
+                    <div>
+                        <p class="contact-title">Email</p>
+                        <p>igordias2104@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-column links">
+                <h3>Ajuda</h3>
+                <ul>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-column links">
+                <h3>Social</h3>
+                <ul>
+                    <li><a href="https://github.com/igordiaazz">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/igordiass/">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/igordiaazz/">Instagram</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-column links">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Termos de serviço</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Igor Dias - 2025.</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script2.js"></script>
+</body>
+</html>

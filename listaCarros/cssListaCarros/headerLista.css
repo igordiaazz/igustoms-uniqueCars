@@ -45,6 +45,10 @@ h1 {
     margin: 0 auto;
 }
 
+.car-card a{
+    text-align: center;
+}
+
 .car-card {
     background-color: #fff;
     border-radius: 8px;
